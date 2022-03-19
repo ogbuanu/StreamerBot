@@ -3,8 +3,9 @@ from my_interval import setInterval
 
 
 def func():
-    bot = Streamer()
     for _ in range(10):
+        bot = Streamer()
         bot()
+        print("visiting site... Done!")
 
-setInterval(func,30)
+setInterval(func,5)
