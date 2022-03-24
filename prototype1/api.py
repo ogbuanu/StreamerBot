@@ -26,7 +26,7 @@ class Streamer(webdriver.Chrome):
         options.add_experimental_option("detach", True)
         super(Streamer,self).__init__(options=options,executable_path=os.environ.get("CHROMEDRIVER_PATH"))
         self.implicitly_wait(15)
-
+ 
 
     def __call__(self):
 
